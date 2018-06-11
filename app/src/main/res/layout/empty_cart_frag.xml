@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context=".EmptyCart">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+       app:title="Empty Cart"
+        app:titleTextColor="@color/colorWhite"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/emptycart" />
+
+    <Button
+        android:textSize="20sp"
+        android:fontFamily="cursive"
+        android:id="@+id/btn1"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/buttonradius"
+        android:text="Click Here to Purchase"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

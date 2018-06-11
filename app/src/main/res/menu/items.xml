@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/g1" android:checkableBehavior="single">
+        <item android:title="Home"
+            android:id="@+id/home"></item>
+    </group>
+
+
+    <group android:id="@+id/g2" android:checkableBehavior="single">
+        <item android:id="@+id/itm1"
+            android:title="Dairy"></item>
+
+        <item android:id="@+id/itm2"
+            android:title="Pulses"></item>
+
+        <item android:id="@+id/itm3"
+            android:title="Oils"></item>
+
+        <item android:id="@+id/itm4"
+            android:title="Home Cleaning"></item>
+
+        <item android:id="@+id/itm5"
+            android:title="Daily Needs"></item>
+    </group>
+
+
+    <group android:id="@+id/g3" android:checkableBehavior="single">
+        <item android:id="@+id/itm6"
+            android:title="Notifications"></item>
+
+        <item android:id="@+id/itm7"
+            android:title="Orders"></item>
+    </group>
+
+
+    <group android:id="@+id/g4" android:checkableBehavior="single">
+        <item android:id="@+id/itm8"
+            android:title="About Us"></item>
+        <item android:id="@+id/itm9"
+            android:title="Contact"></item>
+    </group>
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Login">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/taglogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:selectAllOnFocus="true"
+                    android:text="login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignLeft="@+id/et2"
+                    android:layout_alignStart="@+id/et2"
+                    android:layout_below="@+id/taglogin"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:drawableLeft="@drawable/users"
+                    android:drawablePadding="10dp"
+                    android:hint="E-mail address"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/et1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et2"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Skip Login"
+                    android:textColor="#E74C3C"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/tv1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    android:background="@drawable/buttonradius"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
